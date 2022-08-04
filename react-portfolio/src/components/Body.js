@@ -1,10 +1,15 @@
 import React from 'react'
-import codingquiz from "../Images/codingquiz";
-import ecommerce from "../Images/ecommerce";
-import readmegenerator from "../Images/readmegenerator";
-import regex from "../Images/regex"
-import socialnetwork from "../Images/socialnetwork"
-import workday from "../Images/workday";
+import codingquiz from "../Images/codingquiz.PNG";
+import ecommerce from "../Images/ecommerce.PNG";
+import readmegenerator from "../Images/readmegenerator.PNG";
+import regex from "../Images/regex.PNG";
+import socialnetwork from "../Images/socialnetwork.PNG";
+import workday from "../Images/workday.PNG";
+import body from "../Images/Body.jpg"
+import resume from "../Images/Resume.PNG"
+
+
+
 
 
 function Body() {
@@ -55,34 +60,146 @@ function Body() {
 
     {
       title: "Social Network",
-      description: " ",
+      description: "As a social media startup U want an API for my social network that uses a NoSQL dtatbase.",
 
       thumbnail: socialnetwork,
       
 
-      // TODO: Record a demo video for projectURL
-      projectURL: "https://github.com/sam-pettyjohn/random-photo-generator",
-      githubURL: "https://github.com/sam-pettyjohn/random-photo-generator",
+     
+      projectURL: "https://www.youtube.com/watch?v=1WaAx4b1OPI",
+      githubURL: "https://github.com/Jide1012/Social-Network",
     },
 
-    // ecommerce back-end
+    
     {
-      title: "E-Commerce Back-End Database",
-      description: "Custom built back end for an e-commerce site using Express.js API and configured to use Sequelize to interact with a MySQL database.",
+      title: "Workday Scheduler",
+      description: "As a busy employee I am using a daily planner to create a schedule",
 
       thumbnail: workday,
       
 
-      projectURL: "https://github.com/sam-pettyjohn/ecommerce-back-end",
-      githubURL: "https://github.com/sam-pettyjohn/ecommerce-back-end",
+      projectURL: "https://jide1012.github.io/My-workday/",
+      githubURL: "https://github.com/Jide1012/My-workday",
     },
-
-
-
-
-
   ]
 
+  return (
+    <main>
+            
+            <div id="about" className="about">
+
+                <h2>About Me</h2>
+
+                <div className="about-me">
+                <div className="bio-img">
+                    <img src={body} alt="Jide Adesanya"/>
+                    </div>
+
+                 
+                    
+
+                    <div className="bio-p">
+                        <p> 
+                            Hello my name is Jide Adesanya I am from The Colony Texas. I am an ambitious student pursuing an Economics degree at the University of Texas at Austin with an Accounting Background. 
+                            I am currently enrolled in Southern Methodist University coding Bootcamp.
+                            I am someone who always goes above and beyond in all my work and am always eager to learn new things. 
+                            Outside of work and school you can find me playing soccer and working out with my friends
+                            <br></br>
+                            <br></br>
+                            
+                        </p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            {/* <!-- SUB_SECT: EDUCATION --> */}
+            <div class="education">
+
+                <h2>Education</h2>
+
+                <div class="school">
+
+                    {/* <!-- Bachelors --> */}
+                    <div class="curriculum">
+                        <div class="UT Austin">
+                        <div class="container-header">
+                        {/* <h3>Economicss</h3>
+                        <h4>Currently a junior Enrolled in University of Texas at Austin</h4> */}
+                        </div>
+                            <p>
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <br></br>
+
+                    
+                    <div class="curriculum">
+                        <div class="bootcamp">
+                        <div class="container-header">
+                        <h3>Coding Bootcamp</h3>
+                        <h4>Certificate Program, SMU</h4>
+                        </div>
+                            <p>
+                            Rigorous curriculum that covers a Full Stack: HTML5, CSS3, 
+                            JavaScript, jQuery, Express.js, React.js, Node.js, progressive 
+                            web apps, agile methodology, computer science, database theory, 
+                            MongoDB, MySQL, Git, Python, C#, and AWS.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div id="projects" className="projects">
+
+                <h2>Projects</h2>
+
+                {/* <!-- ALL PROJECT OBJECTS --> */}
+                
+                <div class="container">
+                <div className="row justify-content-around">
+                {Objects.map((card) => (
+                    <>
+                    
+                        <div className="experience col-5">
+                            <a href={card.projectURL}>
+                                <img 
+                                    src={card.thumbnail}
+                                    alt={card.altTag}
+                                />
+                            </a>
+                            <div className="container-header">
+                                <h3>{card.title}</h3>
+                                <p>{card.description}</p>
+                            </div>
+                        </div>
+                    
+                    </>
+                ))}
+                </div>   
+                </div> 
+            </div>
+ 
+ <div id= "resume" className="resume">
+                    <h4>Want to see a resume?</h4>
+                    <a href={resume}></a>
+            </div>
+            
+      
+            
+        </main>
+    
+  )
+  
+
 }
+
+
+
+
 
 export default Body
