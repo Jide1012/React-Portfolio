@@ -1,25 +1,26 @@
 import React from "react"; 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Body from "./components/Body";
+import Project from "./components/Project";
 import Nav from "./components/Nav";
+
 
 import "./App.css"
 
 
 
 function App() {
-
-
   return (
     <>
     <Header/>
-    <Body/>
     <Nav/>
+    <Project/>
     <Footer/>
     
-
     </>
+    
+
+    
   );
 }
 

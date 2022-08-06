@@ -65,7 +65,7 @@ header nav ul li a{
   font-size: 35px;
   padding-top: 65px;
   padding-bottom: 5px;
-  border-bottom: 1px solid var(--primary);
+  border-bottom: 1px solid var(--secondary);
 }
 
 .about-me {
@@ -101,6 +101,9 @@ header nav ul li a{
   width: 50px auto;
 }
 
+/* body{
+  background-image: url(./Images/background.webp);
+} */
 .work {
   width: 100%;
   margin: 0 auto;
@@ -146,6 +149,14 @@ header nav ul li a{
       border-right: none;   
   }
 
+  .resume {
+    color: var(--secondary);
+    font-size: 22px;
+    display: inline block;
+
+
+}
+
   #contact{ 
       display: flex;
       flex-wrap: wrap;
@@ -163,15 +174,14 @@ header nav ul li a{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none ;
 }
 
 .contact-info{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  width: 75%;
-  margin: 75px;
+  width: 100%;
+  margin: 50px;
+  font-size: 20px;
   list-style: none;
   text-decoration: underline; 
   font-weight: bolder;
@@ -179,12 +189,15 @@ header nav ul li a{
 }
 
 a:link, a:visited {
-  color: var(--primary);
+  color: var(--tertiary);
 } 
 
 a:hover {
   color: var(--tertiary);
 }
+
+
+
 
 
 

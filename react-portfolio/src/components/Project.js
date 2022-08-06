@@ -6,13 +6,13 @@ import regex from "../Images/regex.PNG";
 import socialnetwork from "../Images/socialnetwork.PNG";
 import workday from "../Images/workday.PNG";
 import body from "../Images/Body.jpg"
-import resume from "../Images/Resume.PNG"
+import resume from "../Images/Jide Adesanya_Resume.pdf"
 
 
 
 
 
-function Body() {
+function Project() {
 
   let Objects = [
 
@@ -113,27 +113,9 @@ function Body() {
                 </div>
             </div>
 
-            {/* <!-- SUB_SECT: EDUCATION --> */}
-            <div class="education">
-
-                <h2>Education</h2>
-
-                <div class="school">
-
-                    {/* <!-- Bachelors --> */}
-                    <div class="curriculum">
+            
                         <div class="UT Austin">
                         <div class="container-header">
-                        {/* <h3>Economicss</h3>
-                        <h4>Currently a junior Enrolled in University of Texas at Austin</h4> */}
-                        </div>
-                            <p>
-                                
-                            </p>
-                        </div>
-                    </div>
-
-                    <br></br>
 
                     
                     <div class="curriculum">
@@ -143,7 +125,7 @@ function Body() {
                         <h4>Certificate Program, SMU</h4>
                         </div>
                             <p>
-                            Rigorous curriculum that covers a Full Stack: HTML5, CSS3, 
+                            Full Stack: HTML5, CSS3, 
                             JavaScript, jQuery, Express.js, React.js, Node.js, progressive 
                             web apps, agile methodology, computer science, database theory, 
                             MongoDB, MySQL, Git, Python, C#, and AWS.
@@ -158,7 +140,7 @@ function Body() {
 
                 <h2>Projects</h2>
 
-                {/* <!-- ALL PROJECT OBJECTS --> */}
+            
                 
                 <div class="container">
                 <div className="row justify-content-around">
@@ -184,10 +166,13 @@ function Body() {
                 </div> 
             </div>
  
- <div id= "resume" className="resume">
-                    <h4>Want to see a resume?</h4>
-                    <a href={resume}></a>
+            <div id= "resume" className="resume">
+                    <h2>Resume</h2>
+                    <a href={resume}>Click Here</a>
             </div>
+                    
+                    
+            
             
       
             
@@ -202,4 +187,4 @@ function Body() {
 
 
 
-export default Body
+export default Project
