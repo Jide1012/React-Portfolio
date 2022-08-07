@@ -1,4 +1,4 @@
-import React from "react"; 
+import React, {useState} from "react"; 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Project from "./components/Project";
@@ -10,11 +10,11 @@ import "./App.css"
 
 
 function App() {
+  const [page,setPage]=useState("about")
   return (
     <>
-    <Header/>
-    <Nav/>
-    <Project/>
+    <Header setPage={setPage}/>
+    <Project page={page}/>
     <Footer/>
     
     </>

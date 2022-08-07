@@ -12,7 +12,8 @@ import resume from "../Images/Jide Adesanya_Resume.pdf"
 
 
 
-function Project() {
+function Project(props) {
+  console.log(props.page)
 
   let Objects = [
 
@@ -82,8 +83,8 @@ function Project() {
       githubURL: "https://github.com/Jide1012/My-workday",
     },
   ]
-
-  return (
+if(props.page==="about"){
+  return(
     <main>
             
             <div id="about" className="about">
@@ -136,49 +137,75 @@ function Project() {
                 </div>
 
             </div>
-            <div id="projects" className="projects">
+       </main>
+  )
+  
 
-                <h2>Projects</h2>
+}
+if(props.page==="projects"){
+  return(
+    <div id="projects" className="projects">
 
-            
-                
-                <div class="container">
-                <div className="row justify-content-around">
-                {Objects.map((card) => (
-                    <>
-                    
-                        <div className="experience col-5">
-                            <a href={card.projectURL}>
-                                <img 
-                                    src={card.thumbnail}
-                                    alt={card.altTag}
-                                />
-                            </a>
-                            <div className="container-header">
-                                <h3>{card.title}</h3>
-                                <p>{card.description}</p>
-                            </div>
-                        </div>
-                    
-                    </>
-                ))}
-                </div>   
-                </div> 
+    <h2>Projects</h2>
+
+
+    
+    <div class="container">
+    <div className="row justify-content-around">
+    {Objects.map((card) => (
+        <>
+        
+            <div className="experience col-6">
+                <a href={card.projectURL}>
+                    <img 
+                        src={card.thumbnail}
+                        alt={card.altTag}
+                    />
+                </a>
+                <div className="container-header">
+                    <h3>{card.title}</h3>
+                    <p>{card.description}</p>
+                </div>
             </div>
- 
-            <div id= "resume" className="resume">
-                    <h2>Resume</h2>
-                    <a href={resume}>Click Here</a>
-            </div>
-                    
-                    
-            
-            
-      
-            
-        </main>
+        
+        </>
+    ))}
+    </div>   
+    </div> 
+</div>
     
   )
+  
+
+}
+if(props.page==="resume"){
+  return(
+    <div id= "resume" className="resume">
+    <h2>Resume</h2>
+    <a href={resume}>Click Here</a>
+</div>
+  )
+  
+
+}
+
+if(props.page==="contact"){
+  return(
+
+<form action="/action_page.php">
+  <label for="name">Name:</label><br/>
+  <input type="text" id="name" name="name" /><br/>
+  <label for="Email">Email address:</label><br/>
+  <input type="email" id="email" name="email"/><br/><br/>
+  <label for="message">Message:</label><br/>
+  <input type="message" id="message" name="message"/><br/><br/>
+  <input type="submit" value="Submit"/>
+</form>
+  )
+  
+
+}
+  
   
 
 }

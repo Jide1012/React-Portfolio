@@ -1,19 +1,13 @@
 import React from 'react'
+import Nav from './Nav'
 
 
-function Header() {
+function Header(props) {
   return (
     <header>
       <h1>Jide Adesanya</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-
+  
+  <Nav setPage={props.setPage}/>
     </header>
   )
 }
