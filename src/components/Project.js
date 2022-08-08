@@ -61,7 +61,7 @@ function Project(props) {
 
     {
       title: "Social Network",
-      description: "As a social media startup U want an API for my social network that uses a NoSQL dtatbase.",
+      description: "As a social media startup up want an API for my social network that uses a NoSQL dtatbase.",
 
       thumbnail: socialnetwork,
       
@@ -104,7 +104,7 @@ if(props.page==="about"){
                             Hello my name is Jide Adesanya I am from The Colony Texas. I am an ambitious student pursuing an Economics degree at the University of Texas at Austin with an Accounting Background. 
                             I am currently enrolled in Southern Methodist University coding Bootcamp.
                             I am someone who always goes above and beyond in all my work and am always eager to learn new things. 
-                            Outside of work and school you can find me playing soccer and working out with my friends
+                            Outside of work and school you can find me playing soccer and working out with friends.
                             <br></br>
                             <br></br>
                             
@@ -126,10 +126,10 @@ if(props.page==="about"){
                         <h4>Certificate Program, SMU</h4>
                         </div>
                             <p>
-                            Full Stack: HTML5, CSS3, 
+                            Full Stack: HTML, CSS, 
                             JavaScript, jQuery, Express.js, React.js, Node.js, progressive 
-                            web apps, agile methodology, computer science, database theory, 
-                            MongoDB, MySQL, Git, Python, C#, and AWS.
+                            web apps, computer science, database theory, 
+                            MongoDB, MySQL, Git, Python, C#.
                             </p>
                         </div>
                     </div>

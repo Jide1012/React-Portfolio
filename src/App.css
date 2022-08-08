@@ -66,7 +66,11 @@ header nav ul li a{
   font-size: 35px;
   padding-top: 65px;
   padding-bottom: 5px;
-  border-bottom: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--black);
+}
+
+#h2{
+  color: black;
 }
 
 .about-me {
@@ -92,6 +96,11 @@ header nav ul li a{
   margin-top: 20px;
   
  
+}
+
+.curriculum {
+  font-size: 25px;
+  color: black;
 }
 
 .projects {
@@ -169,11 +178,13 @@ body{
       display: flex;
       flex-wrap: wrap;
       justify-content: left;
+      color: black;
   }
   .contact-info{
      flex-direction: column;
     justify-content: center; 
     line-height: 2.8;
+    color: black;
      }
 }  
 
