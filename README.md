@@ -44,7 +44,7 @@ Click link below to view my deployed Application
 
 Image of Site and Functionality
 
-![React-Portfolio](https://afternoon-inlet-17471.herokuapp.com/)
+![React-Portfolio](https://github.com/Jide1012/React-Portfolio/blob/main/src/Images/Website-Image.PNG)
 
 
 
