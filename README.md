@@ -38,7 +38,7 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
   VSCODE
   ## Usage
 Click link below to view my deployed Application
-![React-Portfolio](https://afternoon-inlet-17471.herokuapp.com/)
+https://afternoon-inlet-17471.herokuapp.com/
 
 ## Mock-Up
 
