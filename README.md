@@ -37,8 +37,6 @@ THEN I am presented with text or icon links to the developer’s GitHub and Link
   ## Installation
   VSCODE
   ## Usage
-The links below show this applications will be used.
-Here's a link of the Deployed application.
 
 ![Budget-Tracker](https://github.com/Jide1012/Budget-Tracker/blob/main/Images/Mod%2019%20Image.PNG)
 
@@ -46,7 +44,7 @@ Here's a link of the Deployed application.
 
 Image of Site and Functionality
 
-![Budget-Tracker](https://github.com/Jide1012/Budget-Tracker/blob/main/Images/Mod%2019%20Image.PNG)
+![React-Portfolio](https://github.com/Jide1012/React-Portfolio/blob/main/src/Images/Website-Image.PNG)
 
 
 
